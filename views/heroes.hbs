@@ -1,0 +1,35 @@
+<div class="container1">
+    {{#if heroes}}
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        {{#each heroes}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.firstName}}</td>
+            <td>{{this.lastName}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    {{/if}}
+
+    {{#if hero}}
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        {{#each hero}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.firstName}}</td>
+            <td>{{this.lastName}}</td>
+        </tr>
+        {{/each}}
+    </table>
+    {{/if}}
+</div>
